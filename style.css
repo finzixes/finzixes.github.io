@@ -64,3 +64,16 @@ p {
     min-width: 0 !important;
     width: 100% !important;
 }
+
+.project-images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project-pdf {
+    width: 100%;
+    height: 900px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
