@@ -65,14 +65,21 @@ p {
     width: 100% !important;
 }
 
-.project-images {
+.project-images img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.dev-screenshots {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     align-items: flex-start;
 }
 
-.project-images img {
+.dev-screenshots img {
     width: 220px;
     max-width: 100%;
     height: auto;
