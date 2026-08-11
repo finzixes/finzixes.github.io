@@ -54,3 +54,12 @@ p {
     max-width: 540px;
     margin: 20px 0;
 }
+
+.instagram-profile {
+    max-width: 540px;
+    margin: 20px auto;
+}
+
+.instagram-profile iframe {
+    max-width: 100%;
+}
