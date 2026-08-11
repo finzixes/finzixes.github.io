@@ -54,7 +54,7 @@ p {
 .instagram-profile {
     width: 540px;
     max-width: 100%;
-    height: 500px;      /* crops the empty Instagram space */
+    height: 450px;      /* crops the empty Instagram space */
     overflow: hidden;
     margin: 20px 0;     /* LEFT aligned */
 }
