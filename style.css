@@ -54,7 +54,7 @@ p {
 .instagram-profile {
     width: 540px;
     max-width: 100%;
-    height: 450px;      /* crops the empty Instagram space */
+    height: 500px;      /* crops the empty Instagram space */
     overflow: hidden;
     margin: 20px 0;     /* LEFT aligned */
 }
@@ -66,9 +66,10 @@ p {
 }
 
 .project-images img {
+    display: block;
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .project-pdf {
