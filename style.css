@@ -128,3 +128,28 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
