@@ -133,6 +133,11 @@ p {
     display: flex;
     align-items: flex-start;
     gap: 24px;
+    margin-bottom: 12px;
+}
+
+nav {
+    margin-top: 8px;
 }
 
 .profile-photo {
