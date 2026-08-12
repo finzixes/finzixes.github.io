@@ -109,3 +109,22 @@ p {
     height: auto;
     margin: 20px 0;
 }
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0 40px 0;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
