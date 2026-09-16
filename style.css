@@ -50,6 +50,15 @@ p {
     max-width: 70ch;
 }   
 
+.interests-list {
+  columns: 2;
+  column-gap: 60px;
+}
+
+.interests-list li {
+  break-inside: avoid;
+  margin-bottom: 24px;
+}
 
 .instagram-profile {
     width: 540px;
