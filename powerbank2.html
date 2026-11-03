@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>USB-C Power Bank - Edison Wu</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+
+<body>
+    <main>
+        <h1>USB-C Power Bank</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="running.html">Running</a>
+            <a href="photos.html">Photos</a>
+        </nav>
+
+        <p>
+            <strong>EE 320L Final Project/ Personal Project | Fall 2026</strong>
+        </p>
+
+        <p>
+            A custom rechargeable lithium-ion power bank designed
+            and developed with my friend and lab partner,
+            Kristopher Schmit.
+        </p>
+
+        <p>
+            The project combines a battery charging circuit,
+            a DC-DC boost converter, USB-C connectivity,
+            and a custom-designed PCB to create a portable
+            5V power supply.
+        </p>
+
+        <h2>Project Goals</h2>
+
+        <ul>
+            <li>Design a rechargeable USB-C power bank</li>
+            <li>Implement lithium-ion battery charging</li>
+            <li>Convert battery voltage to regulated 5V output</li>
+            <li>Design and manufacture a custom PCB</li>
+            <li>Practice surface-mount component assembly</li>
+            <li>Evaluate circuit performance and efficiency</li>
+        </ul>
+
+        <h2>Hardware</h2>
+
+        <ul>
+            <li>
+                <strong>Battery:</strong>
+                Adafruit 5035, 3.7V 10,050mAh Li-ion
+            </li>
+            <li>
+                <strong>Charging Controller:</strong>
+                INJOINIC IP2312
+            </li>
+            <li>
+                <strong>Boost Converter:</strong>
+                FP6277XR-G1
+            </li>
+            <li>
+                <strong>Output:</strong>
+                5V USB-C
+            </li>
+            <li>
+                <strong>PCB:</strong>
+                Custom two-layer PCB
+            </li>
+            <li>
+                <strong>PCB Manufacturer:</strong>
+                OSH Park (planned)
+            </li>
+        </ul>
+
+        <h2>System Design</h2>
+
+        <p>
+            The power bank consists of two main subsystems:
+            a battery charging circuit and a boost converter
+            for delivering power to external devices.
+        </p>
+
+        <h3>Battery Charging</h3>
+
+        <p>
+            The charging circuit uses the IP2312 switching
+            charger to regulate power delivered to the
+            lithium-ion battery from an external 5V supply.
+        </p>
+
+        <p>
+            Kristopher is primarily responsible for the
+            charging circuit design.
+        </p>
+
+        <h3>DC-DC Boost Converter</h3>
+
+        <p>
+            The discharging circuit uses the FP6277 switching
+            boost converter to increase the battery's nominal
+            3.7V to a regulated 5V output.
+        </p>
+
+        <p>
+            I am primarily responsible for the boost converter
+            design, component selection, and overall project
+            coordination.
+        </p>
+
+        <h2>Development</h2>
+
+        <h3>LTspice Simulation</h3>
+
+        <p>
+            LTspice is being used to investigate circuit
+            operation and switching regulator behavior
+            before hardware implementation.
+        </p>
+
+        <h3>KiCad Schematic Design</h3>
+
+        <p>
+            Both circuits are designed in KiCad using
+            hierarchical schematic sheets. Custom symbols
+            and footprints are incorporated where needed.
+        </p>
+
+        <h3>PCB Layout</h3>
+
+        <p>
+            The charging and discharging circuits are being
+            integrated onto a single two-layer PCB.
+        </p>
+
+        <p>
+            Important layout considerations include
+            component placement, trace widths, thermal
+            dissipation, grounding, and minimizing switching
+            current loop areas.
+        </p>
+
+        <h3>Assembly & Testing</h3>
+
+        <p>
+            After manufacturing, the PCB will be assembled
+            using surface-mount soldering techniques.
+            The completed circuit will be tested for
+            voltage regulation, charging functionality,
+            and output performance.
+        </p>
+
+        <h2>Project Timeline</h2>
+
+        <ul>
+            <li>
+                <strong>October 12, 2026:</strong>
+                Initial project planning.
+            </li>
+            <li>
+                <strong>October 22, 2026:</strong>
+                Divided charging and discharging circuit
+                responsibilities.
+            </li>
+            <li>
+                <strong>October 28, 2026:</strong>
+                Component selection and datasheet research.
+            </li>
+             <li>
+                <strong>October 29, 2026:</strong>
+                Realized original XR6503D boost converter is near impossible to obtain so pivot to FP6277XR-G1.
+            </li>
+            <li>
+                <strong>October 30-31, 2026:</strong>
+                LTspice simulation and KiCad schematic
+                development.
+            </li>
+            <li>
+                <strong>November 2, 2026:</strong>
+                Final confirmation of schematics. 
+                Final BOM and material orders placed.
+                Start PCB design.
+            </li>
+        </ul>
+
+        <h2>Challenges</h2>
+
+        <p>
+            The project introduces several new challenges,
+            including switching regulator design, component
+            footprint verification, PCB layout, thermal
+            management, and surface-mount soldering.
+        </p>
+
+        <p>
+            This is our first custom-manufactured PCB project,
+            requiring us to consider not only electrical
+            functionality but also manufacturability
+            and assembly.
+        </p>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+            <li>Finalize the combined PCB layout</li>
+            <li>Complete electrical and design-rule checks</li>
+            <li>Order PCBs</li>
+            <li>Assemble and solder the PCB</li>
+            <li>Test charging and discharging functionality</li>
+            <li>Measure output voltage, current, and efficiency</li>
+            <li>Prepare the final presentation</li>
+        </ul>
+
+        <h2>Project Milestones</h2>
+
+        <p>
+            <strong>November 18, 2026:</strong>
+            Junior Design Competition registration deadline.
+        </p>
+
+        <p>
+            <strong>November 20, 2026:</strong>
+            EE 320L final project presentation.
+        </p>
+
+        <p>
+            <strong>December 4, 2026:</strong>
+            Junior Design Competition results.
+        </p>
+
+        <h2>Current Status</h2>
+
+        <p>
+            <strong>In Progress:</strong>
+            Schematic development and PCB layout.
+        </p>
+
+        <p>Updated: 11/02/2026</p>
+
+    </main>
+</body>
+</html>
