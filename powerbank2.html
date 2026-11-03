@@ -114,47 +114,76 @@
             coordination.
         </p>
 
-        <h2>Development</h2>
+
+        <h2>Design & Development</h2>
+
+
+
+        <h3>Understanding the Boost Converter</h3>
+
+        <img src="falstad.png"
+            class="project-image"
+            alt="Falstad boost converter simulation"
+            loading="lazy">
+
+        <p>
+            Before implementing the circuit, I used Falstad to explore
+            how a boost converter steps up a lower input voltage.
+            This helped visualize the switching behavior of the inductor,
+            MOSFET, and diode. and helped me understand how a boost converter worked.
+        </p>
+
+        <h3>Final Circuit Design</h3>
+
+        <img src="Discharging Circuit final.jpg"
+            class="project-image"
+            alt="Initial boost converter schematic"
+            loading="lazy">
+
+        <p>
+            I began by sketching the boost converter circuit based on
+            the FP6277 datasheet, identifying the required components,
+            feedback network, and USB-C connections.
+        </p>
 
         <h3>LTspice Simulation</h3>
 
-        <p>
-            LTspice is being used to investigate circuit
-            operation and switching regulator behavior
-            before hardware implementation.
-        </p>
-
-        <h3>KiCad Schematic Design</h3>
+        <img src="LTSPICE1.png"
+            class="project-image"
+            alt="LTspice boost converter simulation"
+            loading="lazy">
 
         <p>
-            Both circuits are designed in KiCad using
-            hierarchical schematic sheets. Custom symbols
-            and footprints are incorporated where needed.
+            LTspice Verification of the FP6277 Feedback Voltage Divider.
+            0.6024V is our FB resistor network. It tells the chip how much 
+            voltage it is producing so it can regulate output to 5V.
         </p>
 
-        <h3>PCB Layout</h3>
+        <img src="LTSPICE2.png"
+            class="project-image"
+            alt="LTspice output voltage waveform"
+            loading="lazy">
 
         <p>
-            The charging and discharging circuits are being
-            integrated onto a single two-layer PCB.
+            Simulating NPN transistor behavior and making sure it  can control the FP6277 boost converter's enable 
+            (EN) pin based on the presence of external USB-C charging power.
+
         </p>
+
+        <h3>KiCad Schematic</h3>
+
+        <img src="kicadsch.png"
+            class="project-image"
+            alt="KiCad schematic"
+            loading="lazy">
 
         <p>
-            Important layout considerations include
-            component placement, trace widths, thermal
-            dissipation, grounding, and minimizing switching
-            current loop areas.
+            After simulation, I transitioned to KiCad to develop
+            the schematic and prepare the circuit for PCB layout.
         </p>
 
-        <h3>Assembly & Testing</h3>
 
-        <p>
-            After manufacturing, the PCB will be assembled
-            using surface-mount soldering techniques.
-            The completed circuit will be tested for
-            voltage regulation, charging functionality,
-            and output performance.
-        </p>
+        
 
         <h2>Project Timeline</h2>
 
