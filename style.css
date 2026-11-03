@@ -179,11 +179,4 @@ p {
 }
 
 
-.project-image {
-    display: block;
-    width: 100%;
-    max-width: 850px;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 5px;
-}
+
